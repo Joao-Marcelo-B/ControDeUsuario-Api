@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using UsuariosApi.Models;
-using System.Linq;
 
 namespace UsuariosApi.Controllers;
 

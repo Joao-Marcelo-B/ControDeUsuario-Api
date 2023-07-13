@@ -30,21 +30,23 @@ builder.Services
 builder.Services.AddAutoMapper
     (AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services
-    .AddScoped<UsuarioService>();
-builder.Services
-    .AddScoped<TokenService>();
+builder.Services.AddSingleton<IAuthorizationHandler, IdadeAuthorization>();
 
-builder.Services.AddAuthentication(opts =>
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer(); 
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddAuthentication(options =>
 {
-    opts.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(opts =>
+    options.DefaultAuthenticateScheme =
+        JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
 {
-    opts.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey
-        (Encoding.UTF8.GetBytes("fj47832jg14278162847f987h4537fvhbc3")),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("fj47832jg14278162847f987h4537fvhbc3")),
         ValidateAudience = false,
         ValidateIssuer = false,
         ClockSkew = TimeSpan.Zero
@@ -53,17 +55,14 @@ builder.Services.AddAuthentication(opts =>
 
 builder.Services.AddAuthorization(options =>
 {
-   options.AddPolicy("IdadeMinina", policy =>
-        policy.Requirements.Add(new IdadeMinima(18)));
+    options.AddPolicy("IdadeMinima", policy =>
+         policy.AddRequirements(new IdadeMinima(18)));
 });
 
-builder.Services.AddSingleton<IAuthorizationHandler, IdadeAuthorization>();
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+builder.Services
+    .AddScoped<UsuarioService>();
+builder.Services
+    .AddScoped<TokenService>();
 
 var app = builder.Build();
 

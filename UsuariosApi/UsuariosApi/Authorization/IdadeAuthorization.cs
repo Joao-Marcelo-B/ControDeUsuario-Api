@@ -12,7 +12,7 @@ public class IdadeAuthorization : AuthorizationHandler<IdadeMinima>
         var dataNascimentoClaim = context
             .User.FindFirst(claim => claim.Type == ClaimTypes.DateOfBirth);
 
-        if (dataNascimentoClaim == null)
+        if (dataNascimentoClaim is null)
             return Task.CompletedTask;
 
         var dataNascimento = Convert.ToDateTime(dataNascimentoClaim.Value);
