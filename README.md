@@ -1,4 +1,4 @@
-<h1 align="center"> API para Controle de Usuários com Identity </h1>
+<h1 align="center"> API para Controle de Usuários com Identity e .Net 6.0</h1>
 
 ## Descrição do Projeto
 Esse projeto tem como objetivo concretizar os conhecimentos obtidos durante a minha formação feita na plataforna da Alura sobre criação de APIs Web no padrão REST com C#, Identity com Entity Framework e LINQ.
