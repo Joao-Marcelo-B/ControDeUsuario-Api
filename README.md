@@ -2,17 +2,17 @@
 
 ## Descrição do Projeto
 Esse projeto tem como objetivo concretizar os conhecimentos obtidos durante a minha formação feita na plataforna da Alura sobre criação de APIs Web no padrão REST com C#, Identity e Entity Framework e o LINQ.
-Essa aplicação foi construida para fazer cadastros, autenticação e autorização de usuários de um sistema. Portando com ela você consegue cadastrar novos usuários, fazer login e ainda ela utiliza a autenticação via token.
+Essa aplicação foi construida para realizar cadastros, autenticação e autorização de usuários de um sistema. Portando com ela é possível cadastrar novos usuários, fazer login e ainda utilizar a autenticação via token.
 
 ## :hammer: Funcionalidades do projeto
-- A API possibilita fazer o cadastro de um novo usuário por meio de um metodo POST e o objeto a ser passado deve conter o username, data de nascimento, uma senha e um confimação da senha. O username é unico para cada usuário então se tentar cadastrar um username que já exista ele retornará um erro, além disso a senha deve conter letra maiúscula, minúscula, número, caractere especial e no minímo 8 caracteres, segue abaixo um exemplo de cadastro:
+- A API possibilita fazer o cadastro de um novo usuário por meio de um metodo POST e o objeto para cadastro deve conter o username, data de nascimento, senha e uma confirmação da senha. O username é unico para cada usuário, então na tentativa de cadastrar um username que já exista ele retornará um erro, além disso a senha deve conter letra maiúscula, minúscula, número, caractere especial e no minímo 8 caracteres, segue abaixo um exemplo de cadastro:
 <div align="center"> 
   
 ![cadastro](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/516d9fda-6809-4f2c-ae1a-fa8ab21051f1) 
 
 </div>
 
-- Após o cadastro o usuário é salvo no banco de dados e o próprio Identity grava a senha já criptografada e também gera o Id e entro outros dados de validação.
+- Após o cadastro o usuário é salvo no banco de dados e o próprio Identity grava a senha já criptografada no formato hash e também gera o Id de forma criptografada e entro outros dados de validação.
 <div align="center>
   
 ![image](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/a0d3a851-f65f-4166-a540-31f6aaa2f386)
@@ -26,7 +26,7 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 
 </div>
 
-- E por fim é possível ser feito uma requisição de acesso passando o token retornado após o login no "Auth" como um bearer token por meio de um método GET. Segue o exemplo:
+- E por fim é possível ser feito uma requisição de acesso passando o token retornado após o login no campo de requisição "Auth" com um Bearer Token por meio de um método GET. Segue o exemplo:
 <div align="center">
 
 ![image](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/49fcdcb9-940b-4746-bf74-ebdf32e8cf4c)
