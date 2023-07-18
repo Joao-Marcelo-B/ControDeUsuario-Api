@@ -48,7 +48,7 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 - Postman (aplicativo para realizar requisições para teste)
 
 ## Considerações Finais
-
+Como havia dito inicialmente, esse projeto teve como objetivo a concretização dos conhecimetos obtidos ao longo da formação que realizei. Portanto, posso concluir que construindo esse projeto eu consegui exercitar os conhecimentos em APIs REST, protocolo HTTP, a linguagem de programação C# com Identity e Entity Framework e outras bibliotecas como AutoMapper para executar mapeamentos do banco de dados, além disso aprendi como fazer autorização e autenticação via Token com o JWT Bearer. Por fim fico satifesto com esse projeto, e animado para criação de novos projetos e obter mais conhecimeto sobre o desenvolvimento Back-end
 
 ## Contatos:
 
