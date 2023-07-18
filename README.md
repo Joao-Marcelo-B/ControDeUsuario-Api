@@ -21,6 +21,14 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 
 ## Considerações Finais
 
+## Contatos:
+
+<div>
+<a href="https://www.linkedin.com/in/joao-marcelo-b-narciso/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+<a href="https://instagram.com/joao_marcelo_79/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+<a href = "mailto: joaomarcelobn157@hotmail.com "><img src="https://img.shields.io/badge/-Hotmail-%230077B5?style=for-the-badge&logo=microsoft-outlook&logoColor=white&link=mailto" target="_blank"></a>
+</div>
+
 ## Desenvolvedores
 
 [<img src="https://avatars.githubusercontent.com/u/113398296?v=4" width=115><br><sub>João Marcelo</sub>](https://github.com/Joao-Marcelo-B)
