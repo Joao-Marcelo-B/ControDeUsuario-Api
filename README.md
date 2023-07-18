@@ -12,6 +12,13 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 
 </div>
 
+- Após o cadastro o usuário é salvo no banco de dados e o próprio Identity grava a senha já criptografada e também gera o Id e entro outros dados de validação.
+<div align="center>
+  
+![image](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/a0d3a851-f65f-4166-a540-31f6aaa2f386)
+  
+</div>
+
 - Os usuários cadastrados podem efetuar o login e se suas credenciais estiverem corretas ele será autorizado e um token de acesso será gerado imeditamente. Segue o exemplo:
 <div align="center"> 
 
@@ -24,8 +31,9 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 
 ![image](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/49fcdcb9-940b-4746-bf74-ebdf32e8cf4c)
 
-
 </div>
+
+
 
 ## 🖥️Tecnologias e Ferramentas
 
