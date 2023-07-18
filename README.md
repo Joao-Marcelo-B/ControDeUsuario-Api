@@ -5,8 +5,27 @@ Esse projeto tem como objetivo concretizar os conhecimentos obtidos durante a mi
 Essa aplicação foi construida para fazer cadastros, autenticação e autorização de usuários de um sistema. Portando com ela você consegue cadastrar novos usuários, fazer login e ainda ela utiliza a autenticação via token.
 
 ## :hammer: Funcionalidades do projeto
+- A API possibilita fazer o cadastro de um novo usuário por meio de um metodo POST e o objeto a ser passado deve conter o username, data de nascimento, uma senha e um confimação da senha. O username é unico para cada usuário então se tentar cadastrar um username que já exista ele retornará um erro, além disso a senha deve conter letra maiúscula, minúscula, número, caractere especial e no minímo 8 caracteres, segue abaixo um exemplo de cadastro:
+<div align="center"> 
+  
+![cadastro](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/516d9fda-6809-4f2c-ae1a-fa8ab21051f1) 
+
+</div>
+
+- Os usuários cadastrados podem efetuar o login e se suas credenciais estiverem corretas ele será autorizado e um token de acesso será gerado imeditamente. Segue o exemplo:
+<div align="center"> 
+
+<img src="https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/2c45acd4-34c9-410e-b326-231d5f4e305a" />
+
+</div>
+
+- E por fim é possível ser feito uma requisição de acesso passando o token retornado após o login no "Auth" como um bearer token por meio de um método GET. Segue o exemplo:
+<div align="center">
+
+![image](https://github.com/Joao-Marcelo-B/ControleDeUsuario-Api/assets/113398296/49fcdcb9-940b-4746-bf74-ebdf32e8cf4c)
 
 
+</div>
 
 ## 🖥️Tecnologias e Ferramentas
 
@@ -16,10 +35,12 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 
 - Asp.Net Core
 - Identity e Entity Framework
+- JWT - Web Token
 - LINQ
 - Postman (aplicativo para realizar requisições para teste)
 
 ## Considerações Finais
+
 
 ## Contatos:
 
