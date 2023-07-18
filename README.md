@@ -20,7 +20,6 @@ Essa aplicação foi construida para fazer cadastros, autenticação e autoriza�
 - Postman (aplicativo para realizar requisições para teste)
 
 ## Considerações Finais
-Como havia dito inicialmente, esse projeto teve como objetivo a concretização dos conhecimetos obtidos ao longo da formação que fiz. Portanto, posso concluir que construindo esse projeto eu consegui exercitar os conhecimentos em APIs REST, protocolo HTTP, a linguagem de programação C# com Entity Framework e outras bibliotecas como AutoMapper para executar mapeamentos do banco de dados construindo um banco relacional com as cardinalidades de 1:1(um para um), 1:n(um para muitos) e n:n(muitos para muitos) fazer consultar usando código SQL e o LINQ do próprio C#. Por fim fico satifesto com esse projeto, e animado para criação de novos projetos e obter mais conhecimeto sobre o desenvolvimento Back-end
 
 ## Desenvolvedores
 
